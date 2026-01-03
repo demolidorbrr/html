@@ -1,0 +1,137 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Passion+One:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap");
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html,
+body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    /*font-family: "Passion One", cursive;
+    font-size: 2em;
+    padding: clamp(16px, 4vw, 32px) 12px;*/
+}
+
+header>h1 {
+    padding: 50px;
+    font-variant: small-caps;
+    /*font-family: "Passion One", cursive;*/
+}
+
+header>p {
+    padding-bottom: 50px;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    font-size: 0.9em;
+    color: white;
+    padding: 10px;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(92, 90, 90);
+    color: white;
+}
+
+section.imagem p {
+    background-color: rgba(0, 0, 0, 0.164);
+    width: 400px;
+}
+
+
+
+
+
+
+picture,
+img {
+    display: block;
+    width: 100%;
+}
+
+img {
+    height: auto;
+    border-radius: 10px;
+    margin: 0 0 clamp(18px, 3vw, 28px);
+}
+
+
+
+.parallax {
+    background-image: url("imagens/background001.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    /* PARALLAX */
+    background-attachment: fixed;
+
+    /* ✅ deixa a faixa com altura e centraliza o conteúdo verticalmente */
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+
+    /* continua pegando a largura toda */
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+
+    box-shadow: inset 0 0 60px rgba(0, 0, 0, 0);
+}
+
+/* ✅ NOVO: parágrafo por cima da imagem com “caixa escura” */
+.paragrafo.sobre {
+    margin: 0;
+    /* dentro do bloco a margem grande atrapalha */
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.45);
+    color: white;
+
+    padding: 18px 22px;
+
+    /* posiciona um pouco pra esquerda como na foto */
+    margin-left: clamp(16px, 6vw, 60px);
+
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.7);
+}
+
+/* ✅ IMPORTANTE: em celular o fixed costuma falhar, então desliga */
+@media (max-width: 768px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
