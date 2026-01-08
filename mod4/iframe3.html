@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uso de Iframes</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      iframe#tela {
+        width: 95vw;
+        border: 2px solid black;
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Faça uma escolha</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis eos
+      facere velit officia, cupiditate id. Saepe, minus! Quia autem dolorem
+      voluptatum. Numquam ad saepe asperiores eaque, beatae nemo amet est.
+    </p>
+
+    <ul>
+      <li>
+        <a href="paginas-extras/pag001.html" target="frame">Primeira Pagina</a>
+      </li>
+      <li>
+        <a href="paginas-extras/pag002.html" target="frame">Segunda Pagina</a>
+      </li>
+      <li>
+        <a href="paginas-extras/pag003.html" target="frame">Terceira Pagina</a>
+      </li>
+    </ul>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi doloremque
+      a at expedita placeat cum dolorem debitis unde odio maiores. Repellat
+      veritatis tenetur delectus saepe quod error harum magni nesciunt? Lorem
+      ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, sunt qui
+      facilis, expedita error ipsum impedit aspernatur minus accusamus enim est,
+      quos vitae pariatur neque? Ex recusandae voluptate officiis. Quam? Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Aperiam, vitae nulla
+      nihil deleniti cupiditate, magni nam necessitatibus ad nesciunt
+      repellendus reprehenderit ipsam ratione, doloremque et maxime voluptatem
+      sed. Esse, numquam.
+    </p>
+
+    <iframe
+      srcdoc="<h1> Escolha uma das opções acima </h1> <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, fugiat eos. Commodi voluptatem, animi, autem explicabo alias quis quam vitae at magni est asperiores? Veniam odio cumque laboriosam tempore beatae.</p><img src='/imagens/limoes-capa.png' alt='Imagem Placeholder'>"
+      frameborder="1"
+      id="tela"
+      name="frame"
+    >
+      <p>Seu navegador não é compatível com iframes.</p>
+    </iframe>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi doloremque
+      a at expedita placeat cum dolorem debitis unde odio maiores. Repellat
+      veritatis tenetur delectus saepe quod error harum magni nesciunt? Lorem
+      ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, sunt qui
+      facilis, expedita error ipsum impedit aspernatur minus accusamus enim est,
+      quos vitae pariatur neque? Ex recusandae voluptate officiis. Quam? Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Aperiam, vitae nulla
+      nihil deleniti cupiditate, magni nam necessitatibus ad nesciunt
+      repellendus reprehenderit ipsam ratione, doloremque et maxime voluptatem
+      sed. Esse, numquam.
+    </p>
+  </body>
+</html>
